@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard-style.css">
+</head>
+<body>
+  <header>
+    <h1>Jojo Jobs</h1>
+    <p>Your ideal job awaits, start the search</p>
+    <div class="profile">
+      <img src="recruiter-profile.jpg" alt="Recruiter Profile" id="profile-img">
+      <span id="recruiter-name">Recruiter Name</span>
+    </div>
+  </header>
+
+  <div class="filter-container">
+    <select id="job-role">
+      <option value="">Job Role</option>
+      <option value="frontend">Frontend Developer</option>
+      <option value="backend">Backend Developer</option>
+    </select>
+    <select id="job-type">
+      <option value="">Job Type</option>
+      <option value="full-time">Full Time</option>
+      <option value="part-time">Part Time</option>
+    </select>
+    <select id="location">
+      <option value="">Location</option>
+      <option value="in-office">In-Office</option>
+      <option value="remote">Remote</option>
+    </select>
+    <select id="experience">
+      <option value="">Experience</option>
+      <option value="fresher">Fresher</option>
+      <option value="2+ years">2+ Years</option>
+    </select>
+    <button id="search-btn">Search</button>
+  </div>
+
+  <div id="job-list"></div>
+
+  <!-- Popup for Job Details -->
+  <div id="popup" class="popup">
+    <div id="popup-content" class="popup-content"></div>
+  </div>
+
+  <script src="js/dashboard-script.js"></script>
+</body>
+</html>
